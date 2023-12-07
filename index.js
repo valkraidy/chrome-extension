@@ -7,8 +7,8 @@ inputBtn.addEventListener("click", function(){
 
 
 let myLeads = []
-let inputEl = document.createElementById("input-el")
-let inpuBtn = document.createElementById("input-btn")
+const inputEl = document.createElementById("input-el")
+const inpuBtn = document.createElementById("input-btn")
 
 
 
