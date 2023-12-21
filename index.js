@@ -1,21 +1,16 @@
-/*
 
-let inputBtn = document.getElementById("input-btn")
+
+let myLeads = ["qwert","asdfgh","mnbvcx","zcdgfb"]
+
+const inputEl = document.getElementById("input-el") 
+const inputBtn = document.getElementsById("input-btn")
+const ulEl = document.getElementById("ul-el")
+
 inputBtn.addEventListener("click", function(){
-    console.log("button clicked")
-})  */
-
-
-let myLeads = []
-const inputEl = document.createElementById("input-el")
-const inpuBtn = document.createElementById("input-btn")
-
-
-
-
-let inputBtn = document.getElementsById("input-btn")
-inputBtn.addEventListener("click", function(){
-console.log("Button clicked")
+    myLeads.push(inputEl.value)
+    console.log(myLeads)
 })
 
-
+for ( let i=0 ; i < myLeads.length ; i++ ){
+    ulEl.textContent += myLeads[i]
+}
